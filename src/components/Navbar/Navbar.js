@@ -266,8 +266,9 @@ export default function HideAppBar(props) {
                   edge="start"
                   color="inherit"
                   aria-label="open drawer"
+                  onClick={MainTheme.handleTheme}
                 >
-                  <Brightness4 />
+                  {MainTheme.isDarkMode ? <Brightness4 /> : <NightsStay />}
                 </IconButton>
               </div>
 
